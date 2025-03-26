@@ -6,7 +6,7 @@ app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def serve_index():
-    return app.send_static_file('templates/index.html')
+    return app.send_static_file('index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
